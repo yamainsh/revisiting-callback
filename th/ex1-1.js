@@ -7,7 +7,27 @@
 */
 
 // Start Coding Here
+const calculate = (num1, num2 , callback) => callback(num1, num2)
 
+function add(a, b) {
+    return a + b
+}
+
+function subtract(a, b) {
+    return a - b
+}
+
+function multiply(a, b) {
+    return a * b
+}
+
+function divide(a, b) {
+    return b !== 0 ? a / b : "Cannot divide by zero"
+    if(b !== 0 ) {
+      return  a / b 
+    } 
+ return "Cannot divide by zero"
+}
 
 // เมื่อ function นี้ทำงานจะเห็นผลลัพธ์ดังนี้
 console.log(calculate(10, 5, add)); // 15

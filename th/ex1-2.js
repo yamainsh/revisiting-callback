@@ -7,7 +7,10 @@
 
 let damage = 30;
 // Start Coding Here
+const playerAction = (callback) => callback()
 
+const attack = () => `💥 โจมตีสำเร็จ! สร้างความเสียหาย ${damage} แต้ม`
+const runAway = () => `😨 หนีสำเร็จ! รอดตายหวุดหวิด!`
 
 // เมื่อ function นี้ทำงานจะเห็นผลลัพธ์ดังนี้
 console.log(playerAction(attack));  // 💥 โจมตีสำเร็จ! สร้างความเสียหาย 30 แต้ม
